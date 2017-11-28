@@ -14,8 +14,13 @@
 			<em><h:outputLabel value="#{applicationInfo.slogan}" /> </em>
 
 			<h:form>
-				<p:autoComplete value="#{event.name}" completeMethod="#{searchEvents.completeEvents}"/>
-				<p:commandButton value="submit" actionListener="#{searchEvents.execute}" />
+			<p:growl id="growl" showDetail="true" sticky="false" />
+				<h:outputLabel value="Event Name"/><p:inputText value="#{event.name}" /><br/>
+				<h:outputLabel value="address"/><p:inputText value="#{event.addressString}" /><br/>
+				<h:outputLabel value="From"/><p:inputText value="#{event.fromDate}" /><br/>
+				<h:outputLabel value="To"/><p:inputText value="#{event.toDate}" /><br/>
+				<h:outputLabel value="Event descriotion"/><p:inputText value="#{event.description}" /><br/>
+				<p:commandButton value="submit" actionListener="#{addEvent.execute}" update="growl" />
 			</h:form>
 
 			<h:link value="Contact Us" outcome="contactUs" />

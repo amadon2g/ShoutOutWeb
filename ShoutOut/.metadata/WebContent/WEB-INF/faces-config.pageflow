@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <pageflow:Pageflow xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:pageflow="http://www.sybase.com/suade/pageflow" id="pf15054615522100" configfile="/ShoutOut/WebContent/WEB-INF/faces-config.xml">
-  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="300" y="72" id="pf15094887764560" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15094887764561 pf15094915486533" path="index.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="results.xhtml" x="156" y="312" id="pf15094887764562" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15094887764561" path="results.xhtml"/>
-  <nodes xsi:type="pageflow:PFPage" name="noResult.xhtml" x="432" y="324" id="pf15094915486534" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15094915486533" path="noResult.xhtml"/>
-  <links id="pf15094887764561" target="pf15094887764562" source="pf15094887764560" outcome="search"/>
-  <links id="pf15094915486533" target="pf15094915486534" source="pf15094887764560" outcome="noresults"/>
+  <nodes xsi:type="pageflow:PFPage" name="index.xhtml" x="300" y="72" id="pf15094887764560" referenceLink="//@navigationRule.0/@fromViewId|" outlinks="pf15113543647544 pf15113543647545" path="index.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="results.xhtml" id="pf15113543647546" referenceLink="//@navigationRule.0/@navigationCase.0/@toViewId|" inlinks="pf15113543647544" path="results.xhtml"/>
+  <nodes xsi:type="pageflow:PFPage" name="noResult.xhtml" id="pf15113543647547" referenceLink="//@navigationRule.0/@navigationCase.1/@toViewId|" inlinks="pf15113543647545" path="noResult.xhtml"/>
+  <links id="pf15113543647544" target="pf15113543647546" source="pf15094887764560" outcome="search"/>
+  <links id="pf15113543647545" target="pf15113543647547" source="pf15094887764560" outcome="noresults"/>
 </pageflow:Pageflow>
